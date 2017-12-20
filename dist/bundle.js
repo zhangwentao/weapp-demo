@@ -88,7 +88,7 @@ function component() {
   var element = document.createElement('div');
 
   // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_Lodash___default.a.join(['Hello', 'webpack'], ' ');
+  element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_Lodash___default.a.join(['Hello你好', 'webpack'], ' ');
   element.classList.add('hello');
 
   var myIcon = new Image();
@@ -17262,7 +17262,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(8)(content, options);
+var update = __webpack_require__(9)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -17287,7 +17287,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, ".hello {\n  color: red;\n  background: url(" + __webpack_require__(0) + ") no-repeat left center;\n  background-size: contain;\n}\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"song\";\n  src: url(" + __webpack_require__(8) + ");\n}\n.hello {\n  font-family: \"song\";\n  color: red;\n  background: url(" + __webpack_require__(0) + ") no-repeat left center;\n  background-size: contain;\n}\n", ""]);
 
 // exports
 
@@ -17378,6 +17378,12 @@ function toComment(sourceMap) {
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "1d5f00f1c621c70c176eaa212fddb937.ttf";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -17431,7 +17437,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(9);
+var	fixUrls = __webpack_require__(10);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -17747,7 +17753,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 
